@@ -47,7 +47,7 @@ public final class Factorial {
                             // Calculate the factorial
                             int result = factorial(number);
                             writer.write("Factorial of " + number + " is: "
-                             + result + "\n");
+                                    + result + "\n");
                         }
                     } catch (NumberFormatException e) {
                         // Handle invalid number format
@@ -59,10 +59,16 @@ public final class Factorial {
             e.printStackTrace();
         }
     }
-    public static int factorial(int n) {
-        if (n == 0 || n == 1) {
+    /**
+     * This method calculates the factorial of a number recursively.
+     *
+     * @param numberFact The number to calculate the factorial for
+     * @return The factorial of the number
+     */
+    public static int factorial(int numberFact) {
+        if (numberFact == 0 || numberFact == 1) {
             return 1;
         }
-        return n * factorial(n - 1);
+        return numberFact * factorial(numberFact - 1);
     }
 }
