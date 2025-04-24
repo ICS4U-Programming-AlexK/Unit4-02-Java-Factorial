@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 /**
- * This program recursively calculates the factorial of 
+ * This program recursively calculates the factorial of
  * each valid number from an input file
  * and writes the result or error message for each line into an output file.
  * Author: Alex Kapajika
