@@ -2,7 +2,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
-
 /**
  * This program recursively calculates the factorial of 
  * each valid number from an input file
