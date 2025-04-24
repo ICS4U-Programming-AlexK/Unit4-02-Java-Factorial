@@ -2,8 +2,10 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
+
 /**
- * This program recursively calculates the factorial of each valid number from an input file
+ * This program recursively calculates the factorial of 
+ * each valid number from an input file
  * and writes the result or error message for each line into an output file.
  * Author: Alex Kapajika
  * Version: 1.1
@@ -12,6 +14,7 @@ import java.util.Scanner;
 public final class Factorial {
     /** Constant for the input file. */
     private static final String INPUT_FILE = "input.txt";
+    /** Constant for the output file. */
     private static final String OUTPUT_FILE = "output.txt";
     /**
      * This is to satisfy the style checker.
@@ -24,10 +27,9 @@ public final class Factorial {
     }
     /**
      * Main Method.
-     *
      * @param args Unused.
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // Pass the path to the file as a parameter
         try (Scanner scanner = new Scanner(new File(INPUT_FILE));
                 FileWriter writer = new FileWriter(OUTPUT_FILE)) {
@@ -65,7 +67,7 @@ public final class Factorial {
      * @param numberFact The number to calculate the factorial for
      * @return The factorial of the number
      */
-    public static int factorial(int numberFact) {
+    public static int factorial(final int numberFact) {
         if (numberFact == 0 || numberFact == 1) {
             return 1;
         }
