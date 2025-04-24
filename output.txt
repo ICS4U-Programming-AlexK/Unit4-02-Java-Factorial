@@ -1,0 +1,8 @@
+Factorial of 4 is: 24
+Empty line.
+Invalid number : rt
+Factorial of 3 is: 6
+Factorial of 7 is: 5040
+Factorial of 8 is: 40320
+Factorial of 5 is: 120
+Negative number.
